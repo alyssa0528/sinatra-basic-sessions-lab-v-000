@@ -16,7 +16,7 @@ class App < Sinatra::Base
     session["item"] = params["item"]
     @session = session #session is the session hash
 
-    <%= @session["item"]
+    <%= @session["item"] %>
   end
 
 end
