@@ -17,6 +17,7 @@ class App < Sinatra::Base
     @session = session #session is the session hash
 
     <%= @session["item"] %>
+    binding.pry
   end
 
 end
