@@ -15,7 +15,7 @@ class App < Sinatra::Base
   post '/checkout' do
     session["item"] = params["item"]
     @session = session #session is the session hash
-    binding.pry
+    #binding.pry
 
     "#{session["item"]}"
   end
