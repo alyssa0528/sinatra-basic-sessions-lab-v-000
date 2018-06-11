@@ -16,6 +16,8 @@ class App < Sinatra::Base
     session["item"] = params["item"]
     @session = session #session is the session hash
     binding.pry
+
+    "#{session["item"]}"
   end
 
 end
